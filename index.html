@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đặng Minh Trí - Mini Project Portfolio</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>ĐẶNG MINH TRÍ</h1>
+    <p>🚀 Web Developer Portfolio &amp; Mini-Project Showcase</p>
+  </header>
+
+  <nav>
+    <a href="#gioi-thieu">Giới Thiệu</a>
+    <a href="#mini-project">Mini-Project</a>
+    <a href="#lien-he">Liên Hệ</a>
+  </nav>
+
+  <main class="container">
+
+    <section id="gioi-thieu">
+      <h2>👤 Giới thiệu tác giả</h2>
+      <p>Xin chào, tôi tên là <strong>Đặng Minh Trí</strong>. Trang web này đã được tối ưu bằng cách tách riêng biệt file cấu trúc HTML và file giao diện CSS.</p>
+    </section>
+
+    <section id="mini-project">
+      <h2>🌐 Chi tiết dự án: Web Tĩnh Đa Trang Hoàn Chỉnh</h2>
+      <p>Sau khi tách file, nếu bạn tạo thêm các trang như <code>gioi-thieu.html</code> hay <code>lien-he.html</code>, bạn chỉ cần copy dòng <code>&lt;link rel="stylesheet" href="css/style.css"&gt;</code> dán vào đầu các trang đó là xong, không cần phải viết lại CSS từ đầu.</p>
+    </section>
+
+    <section id="lien-he">
+      <h2>✉️ Hòm thư liên hệ - Đặng Minh Trí</h2>
+      <form id="contactForm" action="#" method="POST">
+        <div class="form-group">
+          <label for="userName">Họ và tên của bạn:</label>
+          <input type="text" id="userName" class="form-control" placeholder="Nhập tên..." required>
+        </div>
+        <div class="form-group">
+          <label for="userEmail">Địa chỉ Email:</label>
+          <input type="email" id="userEmail" class="form-control" placeholder="name@example.com" required>
+        </div>
+        <button type="submit" class="btn-submit">Gửi thông tin đi</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Đặng Minh Trí - Sản phẩm thực hành tách cấu trúc dữ liệu đạt chuẩn.</p>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert("Hệ thống của Đặng Minh Trí đã nhận thông tin thử nghiệm thành công!");
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
